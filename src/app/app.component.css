@@ -1,0 +1,60 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+  .example-icon{
+    margin-right: 50px;
+    cursor: pointer;
+  }
+
+  .example-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .sidenavnemu{
+    /*width: 200px;*/
+    display: inline-flex;
+    flex-direction: column;
+    min-width: 180px;
+    max-width: 280px;
+    /*background-color: rgb(0, 0, 0);*/
+    padding: 6px 0;
+  }
+
+  .buttonmenu{
+    /*width: 200px;*/
+    margin-right: 50px;
+    margin-left: 50px;
+    cursor: pointer;
+  }
+
+  .example-menu-item {
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    color: rgb(255, 255, 255);
+  
+    user-select: none;
+    min-width: 64px;
+    line-height: 36px;
+    padding: 0 16px;
+  
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex: 1;
+  }
+  
+  .example-menu-item:hover {
+    width: 180px;
+    background-color: rgb(95, 95, 95);
+  }
+  
+  .example-menu-item:active {
+    width: 180px;
+    background-color: rgb(41, 41, 41);
+  }

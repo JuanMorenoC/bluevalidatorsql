@@ -1,0 +1,35 @@
+<mat-sidenav-container
+    class="example-container" (backdropClick)="close('backdrop')">
+  <mat-sidenav #sidenav class="sidenavnemu" (keydown.escape)="close('escape')" disableClose>
+    <!--
+    <button mat-stroked-button class="buttonmenu" (click)="close('toggle button')">Toggle</button>
+    -->
+    <button mat-icon-button class="buttonmenu" aria-label="Example icon-button with menu icon" (click)="close('toggle button')">
+      <mat-icon>close</mat-icon>
+    </button>
+    <br><br>
+    <button class="example-menu-item" cdkMenuItem (click)="view()">Validar en MySQL</button>
+    <button class="example-menu-item" cdkMenuItem (click)="view()">Validar en SQL Server</button>
+    <button class="example-menu-item" cdkMenuItem (click)="view()">Validar en Oracle</button>
+    <button class="example-menu-item" cdkMenuItem (click)="view()">Validar en SQLite</button>
+    <button class="example-menu-item" cdkMenuItem (click)="view()">Validar en MariaDB</button>
+    <button class="example-menu-item" cdkMenuItem (click)="view()">Validar en PostgreSQL</button>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <mat-toolbar>
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" (click)="sidenav.open()">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span>BlueValidatorSQL</span>
+      <span class="example-spacer"></span>
+      <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+        <mat-icon>favorite</mat-icon>
+      </button>
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+        <mat-icon>share</mat-icon>
+      </button>
+    </mat-toolbar>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
